@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .float_left {
@@ -42,7 +43,6 @@ header {
 .header_top {
   width: 100%;
   border: 1px solid green;
-  /* position: fixed; */
   background-color: lightgrey;
 }
 
@@ -111,8 +111,26 @@ header > .bottom {
 }
 /* /header bottom structure */
 
+/* main structure */
 section {
   height: 500px;
   width: 100%;
   border: 1px solid blue;
+}
+
+.section_top .block {
+  border: 1px solid red;
+  width: 100%;
+}
+
+.block.central .left {
+  width: 30%;
+}
+
+.block.central img {
+  display: block;
+}
+
+.block.central .right {
+  width: 70%;
 }

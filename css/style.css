@@ -43,13 +43,15 @@ button {
   border-radius: 5px;
   font-size: 14px;
   padding: 10px 15px;
-  border: 1px solid #fd7a5a;
   background-color: #fd7a5a;
   color: white;
+  border: none;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: rgba(253, 122, 90, 0.5);
+  border-color: rgba(253, 122, 90, 0.5);
 }
 
 .down {
@@ -63,9 +65,19 @@ header {
   position: relative;
 }
 /* header top structure */
+.blocker {
+  height: 80px;
+  width: 100%;
+}
+
 .header_top {
   width: 100%;
-  margin: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background-color: white;
+  border-bottom: 1.5px solid #2c3d51;
+  position: fixed;
+  z-index: 10;
 }
 
 .header_top .left {
@@ -107,6 +119,7 @@ header {
 button.log_in {
   color: #fd7a5a;
   background-color: white;
+  border: 1px solid #fd7a5a;
 }
 
 /* /header top structure */
@@ -114,8 +127,8 @@ button.log_in {
 /* nav structure */
 nav {
   width: 100%;
-  border-top: 1.5px solid #2c3d51;
   padding: 20px 0;
+  z-index: 0;
 }
 
 nav li {
@@ -165,7 +178,7 @@ nav li i {
 }
 
 .header_bottom #space {
-  height: 80px;
+  height: 72px;
   width: 100%;
   background-color: #95fefe;
   border-top: 2.5px solid #2c3c53;

@@ -111,7 +111,6 @@ header > .bottom {
 /* /header bottom structure */
 
 /* main structure */
-
 section {
   width: 100%;
   border: 1px solid blue;
@@ -142,6 +141,12 @@ section {
   margin: 0 20px;
 }
 
+.block.central .right li {
+  float: left;
+}
+/* /section top structure */
+
+/* section central structure */
 .section_central {
   border: 1px solid green;
 }
@@ -158,4 +163,32 @@ section {
 .section.central img {
   display: block;
 }
-/* /section top structure */
+/* /section central structure */
+
+/* section bottom structure */
+.section_bottom .block.top {
+  width: 100%;
+  padding: 0 60px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.section_bottom .block.top img {
+  width: calc(25% - 10px);
+  margin-left: 10px;
+}
+
+.section_bottom .block.bottom {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.section_bottom .block.bottom .left {
+  width: 40%;
+}
+
+.section_bottom .block.bottom .right {
+  width: 40%;
+  height: 100px;
+  border: 1px solid red;
+}

@@ -42,7 +42,7 @@ header {
 .header_top {
   width: 100%;
   border: 1px solid green;
-  position: fixed;
+  /* position: fixed; */
   background-color: lightgrey;
 }
 
@@ -79,30 +79,37 @@ header {
 
 /* nav structure */
 nav {
-  height: 100px;
   width: 100%;
   border: 1px solid red;
 }
 
-nav > .logo {
-
+nav .logo {
+ width: 25%;
+ border: 1px solid green;
 }
 
 nav .menù {
   border: 1px solid blue;
 }
 
-nav ul {
-  border: 1px solid red;
+nav li {
+  float: left;
 }
-
 /* /nav structure */
 
+/* header bottom structure */
 header > .bottom {
   height: 500px;
   width: 100%;
   border: 1px solid red;
 }
+
+.header_bottom .text {
+  width: 40%;
+  height: 180px;
+  border: 1px solid black;
+}
+/* /header bottom structure */
 
 section {
   height: 500px;

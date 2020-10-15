@@ -35,7 +35,6 @@ a {
 }
 
 header {
-  height: 900px;
   width: 100%;
   border: 1px solid black;
 }
@@ -112,12 +111,12 @@ header > .bottom {
 /* /header bottom structure */
 
 /* main structure */
+
 section {
-  height: 500px;
   width: 100%;
   border: 1px solid blue;
 }
-
+/* section top structure */
 .section_top .block {
   border: 1px solid red;
   width: 100%;
@@ -134,3 +133,29 @@ section {
 .block.central .right {
   width: 70%;
 }
+
+.block.bottom > * {
+  width: calc((100% / 3) - 20px);
+}
+
+.block.bottom .central {
+  margin: 0 20px;
+}
+
+.section_central {
+  border: 1px solid green;
+}
+
+.section_central .row {
+  width: 100%;
+}
+
+.section_central .block {
+  width: calc(100% / 4);
+  border: 1px solid red;
+}
+
+.section.central img {
+  display: block;
+}
+/* /section top structure */

@@ -2,7 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  color: #2c3d51;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 .float_left {
@@ -23,7 +28,7 @@
   height: 95%;
   width: 70%;
   margin: auto;
-  border: 1px solid yellow;
+  position: relative;
 }
 
 ul {
@@ -33,38 +38,75 @@ ul {
 a {
   text-decoration: none;
 }
+
+button {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: 1px solid #fd7a5a;
+  background-color: #fd7a5a;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.down {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
 /* header structure */
 header {
   width: 100%;
-  border: 1px solid black;
+  position: relative;
 }
 /* header top structure */
 .header_top {
   width: 100%;
-  border: 1px solid green;
-  background-color: lightgrey;
+  margin: 20px 0;
 }
 
 .header_top .left {
-  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.linguages {
-  border: 1px solid blue;
-  display: inline-block;
+.header_top .left a {
+  color: #2c3d51;
+  font-weight: 400;
+  font-size: 15px;
 }
 
-.contact {
-  border: 1px solid blue;
+.header_top .linguages {
   display: inline-block;
+  border-right: 1.5px solid #2c3d51;
+  padding-right: 10px;
+}
+
+
+.header_top .contact {
+  display: inline-block;
+  padding-left: 10px;
 }
 
 .header_top .right {
-  border: 1px solid red;
+  vertical-align: middle;
 }
 
 .header_top .search {
   display: inline-block;
+}
+
+.header_top button {
+  margin-left: 15px;
+}
+
+button.log_in {
+  color: #fd7a5a;
+  background-color: white;
 }
 
 /* /header top structure */
@@ -72,34 +114,64 @@ header {
 /* nav structure */
 nav {
   width: 100%;
-  border: 1px solid red;
-}
-
-nav .logo {
- width: 25%;
- border: 1px solid green;
-}
-
-nav .menu {
-  border: 1px solid blue;
+  border-top: 1.5px solid #2c3d51;
+  padding: 20px 0;
 }
 
 nav li {
   float: left;
+  margin-left: 25px;
+}
+
+nav li i {
+  margin-left: 8px;
 }
 /* /nav structure */
 
 /* header bottom structure */
-header > .bottom {
-  height: 500px;
+.header_bottom {
+  height: 600px;
   width: 100%;
-  border: 1px solid red;
+  background-image: url("../img/jumbotron.png");
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #FEF6EF;
 }
 
 .header_bottom .text {
-  width: 40%;
-  height: 180px;
-  border: 1px solid black;
+  width: 50%;
+  text-align: left;
+}
+
+.header_bottom .text h2 {
+  font-size: 45px;
+  padding-top: 50px;
+}
+
+.header_bottom .text p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 30px 0;
+}
+
+.header_bottom .text button {
+  padding: 18px 40px;
+}
+
+.header_bottom .description {
+  font-size: 12px;
+  margin: 30px 0;
+}
+
+.header_bottom #space {
+  height: 80px;
+  width: 100%;
+  background-color: #95fefe;
+  border-top: 2.5px solid #2c3c53;
+  border-bottom: 2.5px solid #2c3c53;
+  position: absolute;
+  bottom: 0;
 }
 /* /header bottom structure */
 /* /header structure */

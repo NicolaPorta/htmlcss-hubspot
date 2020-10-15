@@ -33,7 +33,7 @@ ul {
 a {
   text-decoration: none;
 }
-
+/* header structure */
 header {
   width: 100%;
   border: 1px solid black;
@@ -67,13 +67,6 @@ header {
   display: inline-block;
 }
 
-.log_in {
-
-}
-
-.get_free {
-
-}
 /* /header top structure */
 
 /* nav structure */
@@ -87,7 +80,7 @@ nav .logo {
  border: 1px solid green;
 }
 
-nav .menù {
+nav .menu {
   border: 1px solid blue;
 }
 
@@ -109,6 +102,7 @@ header > .bottom {
   border: 1px solid black;
 }
 /* /header bottom structure */
+/* /header structure */
 
 /* main structure */
 section {
@@ -192,3 +186,44 @@ section {
   height: 100px;
   border: 1px solid red;
 }
+/* /section bottom structure */
+/* /main structure */
+
+/* footer */
+/* footer top structure */
+.footer_top {
+  width: 100%;
+}
+
+.footer_top .links {
+  width: 25%;
+  float: left;
+  text-align: left;
+}
+/* /footer top structure */
+
+/* /footer bottom structure */
+.footer_bottom {
+  width: 100%;
+}
+
+.footer_bottom ul.central {
+  margin:auto;
+  width: 50%;
+}
+
+.footer_bottom .central li {
+  width: calc(100% / 5);
+  float: left;
+}
+
+.footer_bottom .bottom {
+  width: 100%;
+}
+
+.legal_links a {
+  display: inline-block;
+}
+
+
+/* /footer */

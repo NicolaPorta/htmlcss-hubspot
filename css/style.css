@@ -232,6 +232,10 @@ section {
   width: 100%;
   background-color: #F5F8FA;
 }
+
+section .description {
+  font-size: 10px;
+}
 /* section top structure */
 .section_top .block {
   width: 100%;
@@ -405,7 +409,7 @@ section {
 }
 
 .section_central .number span {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   margin: 10px 0;
   vertical-align: middle;
@@ -414,37 +418,65 @@ section {
 .section_central .number i {
   font-size: 8px;
 }
-.section_central .description {
-  font-size: 10px;
-}
+
 /* /section central structure */
 
 /* section bottom structure */
+.section_bottom {
+  padding-top: 40px;
+}
 .section_bottom .block.top {
   width: 100%;
   padding: 0 60px;
   margin-bottom: 20px;
-  border: 1px solid black;
+}
+
+.section_bottom .block.top .left {
+  width: 20%;
+}
+
+.section_bottom p {
+  margin-top: 15px;
+}
+.section_bottom .number {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section_bottom .block.bottom {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.section_bottom .block.top .right {
+  width: 50%;
 }
 
 .section_bottom .block.top img {
   width: calc(25% - 10px);
   margin-left: 10px;
-}
-
-.section_bottom .block.bottom {
-  width: 100%;
-  border: 1px solid black;
+  margin-bottom: 10px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .section_bottom .block.bottom .left {
-  width: 40%;
+  width: 43%;
+  padding-top: 30px;
+}
+
+.section_bottom .block.bottom .button {
+  margin: 20px 0;
 }
 
 .section_bottom .block.bottom .right {
-  width: 40%;
-  height: 100px;
-  border: 1px solid red;
+  width: 55%;
+  text-align: right;
+}
+
+.section_bottom .block.bottom .right img {
+  width: 50%;
+  object-fit: cover;
 }
 /* /section bottom structure */
 /* /main structure */

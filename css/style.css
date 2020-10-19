@@ -442,6 +442,7 @@ section .description {
 .section_top .block.bottom p {
   border-bottom: 2px solid #a2acb9;
   padding-bottom: 60px;
+  height: 186px;
 }
 
 .section_top .block.bottom ul {

@@ -227,6 +227,102 @@ nav li i {
 /* /jumbotron structure */
 /* /header structure */
 
+/* chat */
+.chat {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 60;
+  border-radius: 50%;
+  background-color: #445b79;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.chat:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2),-3px -3px 8px rgba(0, 0, 0, 0.2), 3px -3px 8px rgba(0, 0, 0, 0.2),  -3px 3px 8px rgba(0, 0, 0, 0.2)
+}
+
+.chat .icon {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.chat .icon i {
+  font-size: 23px;
+  position: absolute;
+  bottom: 2px;
+  left: 3px;
+  border-radius: 4px;
+  border: 2px solid #445b79;
+  z-index: 1;
+}
+
+.chat .back_icon {
+  width: 25px;
+  height: 20px;
+  border-radius: 4px 4px 4px 2px;
+  background-color: white;
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  z-index: 0;
+}
+
+.chat .banner {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 0px;
+  width: 250px;
+  border-radius: 4px;
+  z-index: 20;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  padding: 30px 20px 20px 20px;
+  color: #2c3d51;
+  line-height: 2;
+}
+
+.chat .banner span::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url("../img/hand.png");
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.chat .banner img {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chat .banner i {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  color: #a2acb9;
+  border: none;
+  text-align: right;
+}
+
+.chat:hover .banner {
+  display: block;
+}
+/* /chat */
+
 /* main structure */
 section {
   width: 100%;

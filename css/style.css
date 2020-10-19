@@ -238,6 +238,7 @@ nav li i {
   border-radius: 50%;
   background-color: #445b79;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  border: none;
 }
 
 .chat:hover {
@@ -255,7 +256,7 @@ nav li i {
   color: white;
 }
 
-.chat .icon i {
+.chat .icon > i {
   font-size: 23px;
   position: absolute;
   bottom: 2px;
@@ -316,9 +317,23 @@ nav li i {
   color: #a2acb9;
   border: none;
   text-align: right;
+  font-size: 20px;
 }
 
-.chat:hover .banner {
+.chat .banner:hover {
+  cursor: text;
+}
+
+.chat .banner i:hover {
+  color: #3399b5;
+  cursor: pointer;
+}
+
+.chat:focus {
+  outline: none;
+}
+
+.chat:focus-within .banner{
   display: block;
 }
 /* /chat */

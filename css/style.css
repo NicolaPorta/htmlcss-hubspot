@@ -96,7 +96,7 @@ header {
 /* header top structure */
 .header_top {
   width: 100%;
-  padding: 20px 0;
+  padding: 13px 0;
   padding-bottom: 15px;
   background-color: #F5F8FA;
   border-bottom: 1.5px solid #2c3d51;
@@ -104,7 +104,6 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  height: 80px;
 }
 
 .header_top .left {
@@ -161,11 +160,11 @@ header {
 /* nav structure */
 nav {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 68px;
 }
 
 nav .container {
-  line-height: 80px;
+  line-height: 60px;
 }
 
 nav .logo img {

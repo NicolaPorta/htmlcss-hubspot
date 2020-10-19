@@ -331,6 +331,7 @@ nav li i {
 
 .chat:focus {
   outline: none;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2),-3px -3px 8px rgba(0, 0, 0, 0.2), 3px -3px 8px rgba(0, 0, 0, 0.2),  -3px 3px 8px rgba(0, 0, 0, 0.2)
 }
 
 .chat:focus .banner{

@@ -180,6 +180,10 @@ nav li i {
   margin-left: 8px;
 }
 
+nav li a {
+  color: #2c3d51;
+}
+
 .header_top .left a:hover, nav .menu a:hover, footer a:hover {
   color: #3399b5;
 }
